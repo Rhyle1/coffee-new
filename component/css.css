@@ -1,0 +1,66 @@
+.container{
+  background-color: white;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 450px;
+   
+  
+
+
+}
+
+.container p{
+  text-align: center;
+}
+
+body{
+  background-color: antiquewhite;
+
+}
+
+.container1{
+  max-width: 490px;
+  width: 490px;
+  height: 350px;
+  
+  
+
+}
+
+ label{
+  margin-left: 20px;
+}
+
+input{
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 300px;
+  height: 40px;
+  text-decoration: solid;
+ 
+  
+}
+
+
+.button2{
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+
+}
+.button2 input{
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+}
+
+.footername{
+  background-color: brown;
+  margin-bottom: none;
+  height: 20px;
+  color: white;
+
+}

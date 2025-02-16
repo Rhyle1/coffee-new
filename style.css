@@ -2,16 +2,18 @@
  display: flex;
   text-align: center;
   width: 1300px;
-  margin-right: 100px;
+  margin-right: 0;
   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px; 
-      background: #8B4513; 
-      color: white;
-      padding: 10px 20px; 
-      align-items: center;
-      height: 200px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; 
+  background: #8B4513; 
+  color: white;
+  padding: 10px 20px; 
+  align-items: center;
+  height: 200px;
+  width: full;
+    
      
      
       
@@ -66,7 +68,7 @@ button:Hover{
   text-align: center;
   color: white;
   position: fixed;
-  background-color: #6f4e37;
+  background-color: #8B4513;
   
 }
 .image1{
@@ -79,9 +81,11 @@ body{
   font-family: 'poppins',sans-serif;
   background-color: beige;
   height: 200vw;
-  margin: 8;
+ margin-top: 0;
+ margin: auto;
   padding: 0;
   box-sizing: border-box;
+  
 
 }
 table{
@@ -194,42 +198,72 @@ img{
   text-align: center;
 }
 
-.form1{
-  display: inline-block;
-  margin-top: 80px;
-  margin-left: 40px;
-  width: 100;
-  max-width: 290px;
-  background-color: #ffff;
-  margin: 100px auto 70px;
-  padding: 30px 30px 70px;
-  padding-left: 20px;
-  border-radius: 10px;
-  height: fit-content;
-  gap: 10px;
+
+.main-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 2000px;
+  margin: auto;
 }
+
+
 
 
 .picture-container{
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 50vw;
+  width: 50vw;
+  max-width: 290px;
+  background-color: #ffff;
+  margin: 100px 30px 70px;
+  padding: 30px 30px 70px;
+  padding-left: 30px;
+  border-radius: 10px;
+  height: fit-content;
+  gap: 20px;
+
   
-  max-width: 100px;
+  
+}
+.picture-container:hover{
+ 
+}
+.late1{
+  display: inline-block;
+}
+
+.late2{
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  margin-left: 100px;
+  margin-top: 50px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.late2:hover{
+  background-color: #3294fd;
+}
+
+.late3{
   display: inline-block;
   margin-left: 100px;
+  
 }
 
-.picture-container1{
-  width: 100;
-  max-width: 100px;
-  display: inline-block;
-  margin-left: 300px
+.picture-container img{
+  width: 100%;
+  border-radius: 10px;
 }
-.picture-container2{
-  width: 100;
-  max-width: 100px;
-  display: inline-block;
-  margin-left: 300px
 
-}
+
 ul{
   list-style: none;
   display: flex;
