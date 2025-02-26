@@ -15,7 +15,8 @@
 
  
 .container2{
-  display: flex;
+  display: inline-block;
+  gap: 50px;
  
   
 }
