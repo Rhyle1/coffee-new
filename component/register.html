@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="/component/css.css">
+</head>
+<body>
+  <button class="button1"><a href="login.html">Go to Login</a></button>
+
+  <div class="container">
+    <form class="container1" id="registerForm">
+      <p><strong>REGISTER</strong></p>
+
+      <label for="regUsername">Username:</label>
+      <input type="text" id="regUsername" name="username" placeholder="Create a username" required>
+
+      <label for="regPassword">Password:</label>
+      <input type="password" id="regPassword" name="password" placeholder="Create a password" required>
+
+      <div class="button2">
+        <input class="button1" type="submit" value="Register">
+      </div>
+    </form>
+
+    <footer class="footername">
+      <h6>Register Form</h6>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Get input values
+      const regUsername = document.getElementById("regUsername").value;
+      const regPassword = document.getElementById("regPassword").value;
+
+      // Store credentials in localStorage
+      localStorage.setItem("username", regUsername);
+      localStorage.setItem("password", regPassword);
+
+      alert("Registration successful! Please log in.");
+      window.location.href = "login.html"; // Redirect to login page
+    });
+  </script>
+</body>
+</html>

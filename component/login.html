@@ -3,44 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log in</title>
+  <title>Login</title>
   <link rel="stylesheet" href="/component/css.css">
 </head>
 <body>
-    <button class="button1"><a href="/mainpage/web.HTML">HOME</a></button>
+  <button class="button1"><a href="coffee.html">HOME</a></button>
+
   <div class="container">
-    <form class="container1">
-      <p><i><strong>LOG IN</strong/i></p>
-      <table>
-        <tr>
-          <label for="name">Name:</label>
-          <input  type="text" placeholder="User name" required >
-        </tr>
-        <tr>
-            <td>
-              <label for="password">Passw:</label>
-              <input  type="password" placeholder="password" required>
-            </td>
-            <tr>
-              <td>
-                <label for="email">Email:</label>
-                <input   for="email" placeholder="Email@gmail.com" required >
-              </td>
-            </tr>
-        </tr>
-      </table>
-      
-        <div class="button2">
-          <input class="button1" href="/mainpage/web.HTML" type="submit">
-        </div>
+    <form class="container1" id="loginForm">
+      <p><strong>LOG IN</strong></p>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+      <div class="button2">
+        <input class="button1" type="submit" value="Log In">
+      </div>
     </form>
-    
+
     <footer class="footername">
       <h6>Log in Form</h6>
     </footer>
-  
+  </div>
 
-    </div>
-  
+  <script src="login.js">
+  </script>
 </body>
 </html>
